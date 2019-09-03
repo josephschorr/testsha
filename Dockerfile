@@ -5,7 +5,7 @@ ARG somearg=foo
 RUN apt-get update  # UPDATED9
 RUN apt-get install -y git		
 ADD . .		
-RUN echo foo137 > bar
+RUN echo foo138 > bar
 
 FROM alpine:latest
 COPY --from=0 bar baz
